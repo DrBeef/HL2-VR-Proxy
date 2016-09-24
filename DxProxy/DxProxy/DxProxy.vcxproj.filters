@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Stereo">
+      <UniqueIdentifier>{8e86dd19-8c6e-4701-9dbe-401badc08f9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Direct3D9">
+      <UniqueIdentifier>{8518770f-4911-4264-a4c6-0a7e92a34b5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Direct3D9Vireio">
+      <UniqueIdentifier>{28b4cc66-4af3-4ac4-99aa-5a29de9ba8b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Direct3D9Vireio\Direct3DDevice9">
+      <UniqueIdentifier>{4ef859f6-c511-4db2-b101-b5a4fca35325}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helper Classes">
+      <UniqueIdentifier>{4e149322-fc06-4967-8125-549f3cf13bc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helper Classes\SharedSurfaceQueue">
+      <UniqueIdentifier>{67952036-c33d-45b9-9b24-63ccf65f5a99}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="StereoViewFactory.cpp">
+      <Filter>Stereo</Filter>
+    </ClCompile>
+    <ClCompile Include="StereoView.cpp">
+      <Filter>Stereo</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DProxyDeviceFactory.cpp">
+      <Filter>Direct3D9Vireio\Direct3DDevice9</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D9Ex.cpp">
+      <Filter>Direct3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenVR-DirectMode.cpp">
+      <Filter>Stereo</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3DDevice9Ex.cpp">
+      <Filter>Direct3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DProxyDeviceEx.cpp">
+      <Filter>Direct3D9Vireio\Direct3DDevice9</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedSurface\SurfaceDevice9.cpp">
+      <Filter>Helper Classes\SharedSurfaceQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedSurface\SurfaceDevice11.cpp">
+      <Filter>Helper Classes\SharedSurfaceQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedSurface\SurfaceQueue.cpp">
+      <Filter>Helper Classes\SharedSurfaceQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedSurface\SurfaceDevice10.cpp">
+      <Filter>Helper Classes\SharedSurfaceQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugWindow.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Shared\Util.cpp">
+      <Filter>Helper Classes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Exports.def">
+      <Filter>Main</Filter>
+    </None>
+    <None Include="SharedSurface\SurfaceQueue.inl">
+      <Filter>Helper Classes\SharedSurfaceQueue</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Main.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="StereoView.h">
+      <Filter>Stereo</Filter>
+    </ClInclude>
+    <ClInclude Include="StereoViewFactory.h">
+      <Filter>Stereo</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DProxyDeviceFactory.h">
+      <Filter>Direct3D9Vireio\Direct3DDevice9</Filter>
+    </ClInclude>
+    <ClInclude Include="Direct3D9Ex.h">
+      <Filter>Direct3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenVR-DirectMode.h">
+      <Filter>Stereo</Filter>
+    </ClInclude>
+    <ClInclude Include="Direct3DDevice9Ex.h">
+      <Filter>Direct3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DProxyDeviceEx.h">
+      <Filter>Direct3D9Vireio\Direct3DDevice9</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedSurface\SurfaceQueue.h">
+      <Filter>Helper Classes\SharedSurfaceQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedSurface\SurfaceQueueImpl.h">
+      <Filter>Helper Classes\SharedSurfaceQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugWindow.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shared\Util.h">
+      <Filter>Helper Classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DXProxy.rc">
+      <Filter>Main</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
