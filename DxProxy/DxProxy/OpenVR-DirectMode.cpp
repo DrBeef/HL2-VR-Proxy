@@ -370,7 +370,6 @@ void OpenVRDirectMode::PrePresentEx(IDirect3DSurface9* pDirect3DSurface9, D3DPro
 	rect.top = 0;
 	rect.bottom = desc.Height;
     hr = m_pActualDevice->StretchRect(pDirect3DSurface9, &rect, pSurface9, NULL, D3DTEXF_NONE);
- 	vireio::debugf("m_pActualDevice->StretchRect return 0x%.8x", hr);
 
     pSurface9->Release();
 					

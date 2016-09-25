@@ -83,11 +83,8 @@ void DX9ExDebugWindow::init( LPDIRECT3DDEVICE9EX pDevice )
 	winClass.cbClsExtra    = 0;
 	winClass.cbWndExtra    = 0;
 
-	vireio::debugf("RegisterClass()");
 	if( !RegisterClass(&winClass) )
 		return;
-
-	vireio::debugf("CreateWindow()");
 
 	g_hWnd = CreateWindow("HL2_WINDOW_CLASS", 
                              "Half-life 2",
@@ -100,9 +97,8 @@ void DX9ExDebugWindow::init( LPDIRECT3DDEVICE9EX pDevice )
 		return;
 	}
 
-	vireio::debugf("ShowWindow");
     ShowWindow( g_hWnd, SW_SHOWNOACTIVATE);
-	vireio::debugf("UpdateWindow");
+
     UpdateWindow( g_hWnd );
 
 	D3DPRESENT_PARAMETERS d3dpp;
@@ -225,7 +221,6 @@ void DX9ExDebugWindow::copySurface( IDirect3DSurface9* pDirect3DSurface9 )
 	rect.top = 0;
 	rect.bottom = desc.Height;
     hr = g_pGameDevice->StretchRect(pDirect3DSurface9, &rect, pSurface9, NULL, D3DTEXF_NONE);
- 	vireio::debugf("g_pGameDevice->StretchRect return 0x%.8x", hr);
 
     pSurface9->Release();
 
@@ -262,7 +257,6 @@ void DX9ExDebugWindow::present()
 
     // Present with D3D9
     hr = g_pD3DExDevice->StretchRect(pSurface9, NULL, pRenderTarget, NULL, D3DTEXF_NONE);
-	vireio::debugf("g_pD3DExDevice->StretchRect return 0x%.8x", hr);
 
     pRenderTarget->Release();
 
